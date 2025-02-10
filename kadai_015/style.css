@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    font-family: "Arial", "Meiryo", sans-serif;
+    font-size: 20px;
+}
+#basic > p {
+    font-weight: bold;
+}
+h1 {
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.2em;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: solid 3px rgb(115, 115, 114);
+}
+.blue {
+    color: #87ceeb;
+}
+.pink {
+    color: rgb(255, 192, 203);
+}
+
