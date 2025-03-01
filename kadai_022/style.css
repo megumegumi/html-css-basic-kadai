@@ -18,7 +18,7 @@ main {
 }
 #parent {
     display: flex;
-    flex-direction: column; 
+    justify-content: space-around;
 }
 .flexbox-container {
     display: flex;
@@ -31,11 +31,15 @@ main {
 	margin: 20px 0;
 	text-align: center;
 }
+h1{
+        margin: 0;
+        color: rgb(255, 255, 255);
+}
 h2 {
     font-size: 25px;
-    border-bottom: 3px dotted rgb(236, 122, 122);
+    border-bottom: 3px rgb(236, 122, 122);
 }
-h2::before {
+h2{
     content: "● ";
     color: rgb(239, 111, 139);
 }
@@ -43,7 +47,7 @@ h2::before {
     font-weight: bold;
     color: rgb(97, 206, 249);
 }
-.contents img {
+img {
     margin: 10px 0;
     width: 70%;
 }
@@ -51,23 +55,24 @@ footer {
     background-color: rgb(244, 79, 79);
     text-align: center;
 }
-footer a {
+a {
+    font-size: 20px;
     color: rgb(255, 255, 255);
 }
-footer a:visited {
+a {
     color: rgb(193, 234, 251);
 }
-footer a:hover {
+a {
     color: rgb(245, 178, 168);
 }
-@media screen and (max-width: 768px) {
-    h2 {
-      font-size: 30px;
+@media screen and (min-width: 768px) {
+    .contents{
+      flex-basis: 30%;
 }
 p {
       font-size: 25px;
 }
 #parent {
-      display: flex;
+    flex-direction: column;
 }
 }
